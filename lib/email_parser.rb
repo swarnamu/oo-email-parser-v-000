@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    emails.split.each do |email|
+    emails.split.collect do |email|
       email.split(' ,')
 
     end.flatten.uniq
